@@ -95,7 +95,7 @@ body {
     background-color: #373b49;
 }
 
-@media screen and (max-width: 536px) {
+@media screen and (max-width: 730px) {
     .menu-item {
         display: none;
     }
