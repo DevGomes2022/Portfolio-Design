@@ -4,10 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Kevin Guilherme Gomes Azevedo</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="menu_header">
+            <nav class="menu">
+                <div class="logo">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="menu-list">
+                    <ul>
+                        <li class="menu-item"><a href="#inicio" class="menu-link">INÍCIO</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">SOBRE</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">PROJETOS</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-icon" onclick="menuShow()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                      </svg>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="menu-item"><a href="#inicio" class="menu-link">INÍCIO</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">SOBRE</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">PROJETOS</a></li>
+                </ul>
+            </div>
+        </div>
+        <header id="inicio">
+            <div class="box_bolha movimento-b"></div>
+            <div class="icons">
+                <a href="https://github.com/DevGomes2022" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adff2f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                      </svg>
+                </a>
+                <a href="https://www.facebook.com/kevin.guilherme.9081" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adff2f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                       <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                       </svg>
+                </a>
+                <a href="https://www.instagram.com/kelri_69/?next=%2F" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#adff2f" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                      </svg>
+                </a>
+            </div>
+            <div class="box_header">
+                <div class="box_frase_header">
+                    <div class="frase_header movimento-a">
+                        <h2>Programador</h2>
+                        <h1>Eu me chamo <strong style="color: greenyellow; text-shadow: 0px 0px 3px greenyellow; ">Kevin Guilherme</strong></h1>
+                        <h3>Esse site serve para mostrar o meu Portfolio.</h3>
+                        <p>Fique a vontade para dar uma olhada no site, aqui você poderá ver, todos os meus projetos, um pouco sobre mim, meus planos para o futuro, qual é o meu nivel de estudo atualmente, caso fique interessado, entre em contato comigo.</p>
+                        <div class="box_lang">
+                            <section class="box_linguas">
+                                <h1>HTML5</h1>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="orange" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                                    <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                                    </svg>
+                            </section>
+                            <section class="box_linguas">
+                                <h1>CSS3</h1>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#006eff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                                    <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                                    </svg>
+                            </section>
+                            <section class="box_linguas">
+                                <h1>PYTHON</h1>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-python" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="green" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" />
+                                    <path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" />
+                                    <path d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4" />
+                                    <line x1="11" y1="6" x2="11" y2="6.01" />
+                                    <line x1="13" y1="18" x2="13" y2="18.01" />
+                                    </svg>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="java.js"></script>
 </body>
 </html>

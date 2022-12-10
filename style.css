@@ -4,5 +4,368 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4)
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: #fbf9ff;
+}
+
+.container {
+    width: 100%;
+    height: 3000px;
+}
+
+/*==========menu==========*/
+
+.menu_header {
+    background-color: #373b49;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: White;
+    padding: 15px;
+    cursor: context-menu;
+    text-align: center;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-item {
+    margin: 20px;
+    margin-right: 50px;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.menu-link:hover {
+    color: greenyellow;
+}
+
+.mobile-menu-icon {
+    padding: 5px;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.mobile-menu-icon:hover {
+    background-color: rgba(26, 30, 46, 0.2);
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #373b49;
+}
+
+@media screen and (max-width: 536px) {
+    .menu-item {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+    .mobile-menu .menu-item {
+        display: block;
+        padding: 5px 10px;
+    }
+    .mobile-menu {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+/*==========header==========*/
+
+header {
+    background-image: linear-gradient(to top, #1a1e2e, #373b49);
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.box_header {
+    width: 71%;
+    height: 700px;
+    margin: auto;
+}
+
+.box_frase_header {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+@media screen and (max-width:1000px) {
+    .box_frase_header {
+        width: 100%;
+    }
+}
+
+.frase_header {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width:1000px) {
+    .frase_header {
+        top: 40%;
+    }
+}
+
+.frase_header > h2 {
+    background-color: greenyellow;
+    color: black;
+    font-weight: 600;
+    width: 120px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 0px rgba(172, 255, 47, 0.7);
+    cursor: context-menu;
+}
+
+.frase_header > h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: context-menu;
+}
+
+@media screen and (max-width:536px) {
+    .frase_header > h1 {
+        font-size: 20px;
+    }
+}
+
+
+.frase_header > h3 {
+    font-size: 19px;
+    font-weight: 400;
+    cursor: context-menu;
+}
+
+@media screen and (max-width:536px) {
+    .frase_header > h3 {
+        font-size: 15px;
+    }
+}
+
+.frase_header > p {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: context-menu;
+}
+
+@media screen and (max-width:536px) {
+    .frase_header > p {
+        font-size: 12px;
+    }
+}
+
+.box_lang {
+    width: 100%;
+    text-align: center;
+}
+
+.box_linguas {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-top: 50px;
+    animation: lang 2s alternate infinite;
+}
+
+@media screen and (max-width:536px) {
+    .box_linguas {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .box_linguas {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@keyframes lang {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+.box_linguas h1 {
+    color: white;
+    font-size: 20px;
+    cursor: context-menu;
+}
+
+.box_linguas h1 {
+    color: white;
+    font-size: 20px;
+    cursor: context-menu;
+}
+
+.box_linguas h1 {
+    color: white;
+    font-size: 20px;
+    cursor: context-menu;
+}
+
+@media screen and (max-width:536px) {
+    .box_linguas h1 {
+        font-size: 15px;
+    }
+}
+
+/*====*/
+
+.box_bolha {
+    width: 380px;
+    height: 380px;
+    background-image: url(assets/imgs/Me-paisagem.png);
+    background-position: center center;
+    position: absolute;
+    bottom: 190px;
+    right: 70px;
+    box-shadow: 0px 0px 10px #ffffff66;
+    animation: cres 2s alternate infinite;
+}
+
+@keyframes cres {
+    0% {
+        border-radius: 50%;
+    }
+    100%{
+        border-radius: 42%;
+    }
+}
+
+.box_bolha:hover {
+    animation-duration: 1s;
+}
+
+@media screen and (min-width:1330px) {
+    .box_bolha {
+        right: 240px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .box_bolha {
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 200px;
+        height: 200px;
+        background-image: url(assets/imgs/Me-green-peq.png);
+    }
+}
+
+@media screen and (max-width:536px) {
+    .box_bolha {
+        top: 80%;
+    }
+}
+
+/*==========*/
+
+.icons {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    width: 60px;
+}
+
+.icons svg {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.icons svg:hover {
+    transform: translateX(-10px);
+    background-color: #acff2f33;
+}
+
+/*==========scrol revel==========*/
+
+.movimento-a, .movimento-b {
+    visibility: hidden;
+}
+
+/*==========scrol bar==========*/
+
+::-webkit-scrollbar {
+    background-color: #2b2e3a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1f222c;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #15171d;
+}
