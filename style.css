@@ -395,6 +395,7 @@ header {
     font-size: 20px;
     text-align: justify;
     text-shadow: 0px 0px 10px #000000cc;
+    cursor: context-menu;
 }
 
 /*====*/
@@ -406,6 +407,101 @@ header {
 .certificados-b {
     display: inline-block;
 }
+
+/*==========sobre mim==========*/
+
+.box_sobre {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to top, #1a1e2e, #1a1e2e, #373b49);
+}
+
+.box_sobre h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.sobre {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.box_sobre p {
+    width: 400px;
+    font-size: 18px;
+    text-align: justify;
+    position: absolute;
+    top: 55px;
+    right: 55px;
+}
+
+.box_cor {
+    width: 385px;
+    height: 385px;
+    background-image: linear-gradient(to top, #1a1e2e, #1a1e2e, #373b49);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    place-items: center;
+    display: grid;
+}
+
+.box_cor::before {
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background-image: conic-gradient(transparent, transparent, transparent, greenyellow);
+    animation: rotate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.box_cor::after {
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background-image: conic-gradient(transparent, transparent, transparent, greenyellow);
+    animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box_cor > span {
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    background-image: url(assets/imgs/Me-paisagem.png);
+    z-index: 2;
+}
+
+
+
+/*==========projetos==========*/
+
+.box_projetos {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(to top, #373b49, #1a1e2e, #1a1e2e);
+}
+
+
 
 
 
