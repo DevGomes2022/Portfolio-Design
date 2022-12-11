@@ -21,7 +21,7 @@ body {
 
 .container {
     width: 100%;
-    height: 6000px;
+    height: auto;
 }
 
 /*==========menu==========*/
@@ -438,6 +438,7 @@ header {
     position: absolute;
     top: 55px;
     right: 55px;
+    cursor: context-menu;
 }
 
 @media screen and (max-width:1080px) {
@@ -670,6 +671,13 @@ header {
     height: 450px;
 }
 
+@media screen and (max-width:425px) {
+    .projeto-b iframe {
+        width: 350px;
+        height: 400px;
+    }
+}
+
 .projeto-b a {
     font-size: 15px;
     color: white;
@@ -729,6 +737,13 @@ header {
     width: 400px;
     height: 350px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width:425px) {
+    .projeto-c iframe {
+        width: 350px;
+        height: 350px;
+    }
 }
 
 /*====*/
@@ -870,7 +885,63 @@ header {
     border-radius: 4px;
     color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
+    margin-bottom: 20px;
 }
+
+/*====*/
+
+.box_nav li {
+    list-style: none;
+}
+
+.box_nav {
+    width: 200px;
+    text-align: initial;
+    position: relative;
+    cursor: pointer;
+}
+
+.botao_lista {
+    padding: 10px;
+    width: 120px;
+    background-color: #797979;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao_lista:hover {
+    background-color: #5e5e5e;
+}
+
+.lista {
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .3s;
+    background-color: lightgray;
+    text-align: center;
+    width: 120px;
+    font-size: 12px;
+}
+
+.lista li {
+    padding: 10px;
+}
+
+.lista li:hover {
+    background-color: lightblue;
+}
+
+.newlista {
+    transform: scaleY(1);
+}
+
+
+
+
+
 
 .box_formulario > h6 {
     font-size: 14px;
@@ -905,11 +976,7 @@ header {
 
 /*====*/
 
-.box_formulario a {
-    text-decoration: none;
-}
-
-.box_formulario a h1{
+.box_formulario h1{
     width: 8rem;
     padding: 10px;
     background-color: #00c3ff;
@@ -919,13 +986,68 @@ header {
     margin: auto;
     transition: 0.4s;
     font-size: 18px;
+    cursor: pointer;
 }
 
-.box_formulario a h1:hover {
+.box_formulario h1:hover {
     background-color: #0d9dc9;
 }
 
 
+
+/*==========footer==========*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #1a1e2e;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.box_footer {
+    width: 100%;
+    position: relative;
+}
+
+.box_footer p {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    cursor: context-menu;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.icons_footer {
+    text-align: center;
+}
+
+.icons_footer a {
+    color: transparent;
+}
+
+.icons_footer svg {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.icons_footer svg:hover {
+    transform: translateY(-10px);
+    background-color: #acff2f33;
+}
+
+.box_footer_icons a {
+    color: white;
+}
+
+.box_footer_icons a:hover {
+    color: greenyellow;
+}
 
 
 /*==========scrol revel==========*/

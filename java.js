@@ -18,3 +18,11 @@ sr.reveal(".movimento-b", {
     duration: 800,
     delay: 400
 });
+
+
+
+let botao_lista = document.querySelector(".botao_lista")
+let lista = document.querySelector(".lista")
+botao_lista.addEventListener("click", () => {
+    lista.classList.toggle("newlista")
+})
