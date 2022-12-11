@@ -549,11 +549,11 @@ header {
 
 .box_projetos {
     width: 100%;
-    height: 2000px;
+    height: auto;
     background-image: linear-gradient(to top, #373b49, #1a1e2e, #1a1e2e);
 }
 
-.box_projetos h1 {
+.box_projetos > h1 {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -632,6 +632,7 @@ header {
     display: block;
     text-align: center;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 .projeto-a a:hover {
@@ -681,6 +682,7 @@ header {
     display: block;
     text-align: center;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 .projeto-b a:hover {
@@ -716,6 +718,7 @@ header {
     display: block;
     text-align: center;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 .projeto-c a:hover {
@@ -750,6 +753,7 @@ header {
 .projeto-d {
     margin: auto;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .projeto-d p {
@@ -759,6 +763,169 @@ header {
     padding-bottom: 20px;
     max-width: 350px;
 }
+
+/*====*/
+
+.formulario {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:500px) {
+    .formulario {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .formulario {
+        width: 60%;
+    }
+}
+
+
+.formulario > h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.formulario > p {
+    font-size: 15px;
+    padding: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*=====*/
+
+.box_formulario {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+#nome {
+    background-color: #d8d8d8;
+    display: block;
+    padding: 5px;
+    width: 90%;
+    border-radius: 4px;
+}
+
+#nome::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#sobrenome {
+    background-color: #d8d8d8;
+    display: block;
+    padding: 5px;
+    width: 90%;
+    border-radius: 4px;
+}
+
+#sobrenome::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#email {
+    background-color: #d8d8d8;
+    display: block;
+    padding: 5px;
+    width: 90%;
+    border-radius: 4px;
+}
+
+#email::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: end;
+}
+
+#senha {
+    background-color: #d8d8d8;
+    display: block;
+    padding: 5px;
+    width: 90%;
+    border-radius: 4px;
+}
+
+#senha::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: end;
+}
+
+
+#data_nascimento {
+    background-color: #d8d8d8;
+    display: block;
+    padding: 5px;
+    width: 90%;
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.box_formulario > h6 {
+    font-size: 14px;
+    color: rgb(59, 59, 59);
+    text-align: initial;
+    margin: 0;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    cursor: context-menu;
+}
+
+/*====*/
+
+.reposta {
+    text-align: initial;
+    padding: 8px;
+    padding-left: 0px;
+}
+
+#botao_confirmar {
+    cursor: pointer;
+}
+
+.reposta > h6 {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: context-menu;
+}
+
+
+/*====*/
+
+.box_formulario a {
+    text-decoration: none;
+}
+
+.box_formulario a h1{
+    width: 8rem;
+    padding: 10px;
+    background-color: #00c3ff;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    transition: 0.4s;
+    font-size: 18px;
+}
+
+.box_formulario a h1:hover {
+    background-color: #0d9dc9;
+}
+
+
 
 
 /*==========scrol revel==========*/
