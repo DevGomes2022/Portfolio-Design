@@ -21,7 +21,7 @@ body {
 
 .container {
     width: 100%;
-    height: 3000px;
+    height: 6000px;
 }
 
 /*==========menu==========*/
@@ -425,19 +425,28 @@ header {
 }
 
 .sobre {
-    width: 90%;
+    width: 80%;
     height: auto;
     margin: auto;
     position: relative;
 }
 
 .box_sobre p {
-    width: 400px;
+    max-width: 400px;
     font-size: 18px;
     text-align: justify;
     position: absolute;
     top: 55px;
     right: 55px;
+}
+
+@media screen and (max-width:1080px) {
+    .box_sobre p {
+        position: initial;
+        margin: auto;
+        padding-top: 50px;
+
+    }
 }
 
 .box_cor {
@@ -449,6 +458,28 @@ header {
     overflow: hidden;
     place-items: center;
     display: grid;
+}
+
+@media screen and (max-width:1080px) {
+    .box_cor {
+        margin: auto;
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .box_cor {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .box_cor {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .box_cor::before {
@@ -488,21 +519,246 @@ header {
     transform: translate(-50%,-50%);
     border-radius: 20px;
     background-image: url(assets/imgs/Me-paisagem.png);
+    background-position: center center;
     z-index: 2;
 }
 
+@media screen and (max-width:1080px) {
+    .box_cor > span {
+        width: 345px;
+        height: 345px;
+    }
+}
 
+@media screen and (max-width:430px) {
+    .box_cor > span {
+        width: 295px;
+        height: 295px;
+        background-position: top center;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .box_cor > span {
+        width: 245px;
+        height: 245px;
+    }
+}
 
 /*==========projetos==========*/
 
 .box_projetos {
     width: 100%;
-    height: 700px;
+    height: 2000px;
     background-image: linear-gradient(to top, #373b49, #1a1e2e, #1a1e2e);
+}
+
+.box_projetos h1 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1080px) {
+    .box_projetos h1 {
+        padding-top: 350px;
+    }
+}
+
+/*====*/
+
+.projeto-a {
+    margin: auto;
+    text-align: center;
+}
+
+.projeto-a p {
+    font-size: 20px;
+    margin: auto;
+    padding-bottom: 20px;
+    max-width: 350px;
+}
+
+/*====*/
+
+.span-a {
+    display: inline-block;
+}
+
+.span-b {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.span_ft-a {
+    width: 200px;
+    height: 200px;
+    background-image: url(assets/imgs/site\ comera-ft1.PNG);
+    display: inline-block;
+}
+
+.span_ft-b {
+    width: 200px;
+    height: 200px;
+    background-image: url(assets/imgs/site\ comera-ft2.PNG);
+    display: inline-block;
+}
+
+.span_ft-c {
+    width: 200px;
+    height: 200px;
+    background-image: url(assets/imgs/site\ comera-ft3.PNG);
+    display: inline-block;
+}
+
+.span_ft-d {
+    width: 200px;
+    height: 200px;
+    background-image: url(assets/imgs/site\ comera-ft4.PNG);
+    display: inline-block;
+}
+
+.projeto-a a {
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    width: 220px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #4a740b;
+    transition: 0.4s;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.projeto-a a:hover {
+    background-color: #649e0e;
+}
+
+
+/*====*/
+
+.projeto-a {
+    margin: auto;
+    text-align: center;
+}
+
+.projeto-a p {
+    font-size: 20px;
+    margin: auto;
+    padding-bottom: 20px;
+    max-width: 350px;
+}
+
+/*====*/
+
+.span-a {
+    display: inline-block;
+}
+
+.span-b {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.projeto-b iframe {
+    width: 400px;
+    height: 450px;
+}
+
+.projeto-b a {
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    width: 220px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #4a740b;
+    transition: 0.4s;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.projeto-b a:hover {
+    background-color: #649e0e;
+}
+
+/*====*/
+
+.projeto-b {
+    margin: auto;
+    text-align: center;
+}
+
+.projeto-b p {
+    font-size: 20px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    max-width: 350px;
+}
+
+/*====*/
+
+.projeto-c a {
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    width: 220px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #4a740b;
+    transition: 0.4s;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.projeto-c a:hover {
+    background-color: #649e0e;
+}
+
+.projeto-c iframe {
+    width: 400px;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+/*====*/
+
+.projeto-c {
+    margin: auto;
+    text-align: center;
+}
+
+.projeto-c p {
+    font-size: 20px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    max-width: 350px;
 }
 
 
 
+/*====*/
+
+.projeto-d {
+    margin: auto;
+    text-align: center;
+}
+
+.projeto-d p {
+    font-size: 20px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    max-width: 350px;
+}
 
 
 /*==========scrol revel==========*/
